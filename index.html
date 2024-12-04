@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comping Lista de Compras</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="COMPRARE.png" alt="Logo da empresa Comping" class="logo">
+    <h1>LISTA DE COMPRAS</h1>
+  </header>
+
+  <main>
+    <section id="formulario">
+      <h2>Adicionar ao Carrinho</h2>
+      <form id="cadastroForm">
+        <label for="nome">Item:</label>
+        <input type="text" id="nome" required>
+
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" required>
+          <option value="" disabled selected>Selecionar</option>
+          <option value="frutas">Frutas e Verduras</option>
+          <option value="limpeza">Produtos de Limpeza</option>
+          <option value="carnes">Carnes e Peixes</option>
+          <option value="laticinios">Laticínios</option>
+          <option value="padaria">Padaria</option>
+          <option value="bebidas">Bebidas</option>
+          <option value="mercearia">Mercearia</option>
+        </select>
+        
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+
+    <section id="listas">
+      <article id="frutaseverduras" class="lista">
+        <h2>Frutas e Verduras</h2>
+        <ul id="listafrutas"></ul>
+      </article>
+      
+      <article id="limpeza" class="lista">
+        <h2>Produtos de Limpeza</h2> 
+        <ul id="listalimpeza"></ul>  
+      </article>
+      
+      <article id="carnes" class="lista">
+        <h2>Carnes e Peixes</h2>
+        <ul id="listadecarnes"></ul>
+      </article>
+
+      <article id="laticinios" class="lista">
+        <h2>Laticínios</h2>
+        <ul id="listadelaticinios"></ul>
+      </article>
+
+      <article id="padaria" class="lista">
+        <h2>Padaria</h2>
+        <ul id="listadepadaria"></ul>
+      </article>
+
+      <article id="bebidas" class="lista">
+        <h2>Bebidas</h2>
+        <ul id="listadebebidas"></ul>
+      </article>
+
+      <article id="mercearia" class="lista">
+        <h2>Mercearia</h2>
+        <ul id="listademercearia"></ul>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Comping Lista de Compras</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
